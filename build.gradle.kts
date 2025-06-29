@@ -29,6 +29,9 @@ dependencies {
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation("org.springframework:spring-webflux")
+
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0")
 }
 
 kotlin {

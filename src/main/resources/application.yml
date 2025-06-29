@@ -24,11 +24,13 @@ spring:
         highlight_sql: true
 
 logging:
-  pattern:
-    console: "[%d{HH:mm:ss.SSS}][%-5level][%logger.%method:line%line] - %msg%n"
+  #pattern:
+    #console: "[%d{HH:mm:ss.SSS}][%-5level][%logger.%method:line%line] - %msg%n"
   level:
     org:
       hibernate:
         type.descriptor.sql: TRACE
         SQL: DEBUG
 
+kakao:
+  api-key: ${KAKAO_API_KEY}
