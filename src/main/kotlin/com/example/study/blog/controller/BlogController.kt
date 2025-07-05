@@ -2,6 +2,7 @@ package com.example.study.blog.controller
 
 import com.example.study.blog.dto.BlogDto
 import com.example.study.blog.service.BlogService
+import jakarta.validation.Valid
 import org.springdoc.core.annotations.ParameterObject
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
@@ -14,7 +15,7 @@ class BlogController(
 ) {
 
     @GetMapping("")
-    fun search(@ParameterObject blogDto: BlogDto): String? {
+    fun search(@ParameterObject @Valid blogDto: BlogDto): String? {
         val result = blogService.searchKakao(blogDto)
         return result
     }
