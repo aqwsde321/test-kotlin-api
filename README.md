@@ -6,6 +6,7 @@
 
 - 코틀린 언어 기반의 API 서버 개발 연습
 - Spring Boot 환경에서 코틀린과 JPA 사용 실습
+- WebClient로 kakao API 호출하기(blog search) 
 - 인증, 구조 설계, 배포 등의 백엔드 핵심 구성 요소 테스트
 
 ## 사용 기술
